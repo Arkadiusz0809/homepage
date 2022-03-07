@@ -6,21 +6,16 @@ html {
     box-sizing: inherit;
 }
 
-.background-image {
-    max-width: 800px;
-    height: auto;
-    background-image: url("money.jpg");
-    background-size: cover;
-    margin: 0 auto;
-}
-
 .form {
-    max-width: 800px;
-    margin: 10px auto;
-
+    margin: 10px 10px auto;
+    background-image: url("d.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 680px;
 }
 
 .form__fieldset {
+    max-width: 600px;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
