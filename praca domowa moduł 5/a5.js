@@ -1,35 +1,47 @@
+{
 
-let currencyElement = document.querySelector(".js-currency");
-let resultElement = document.querySelector(".js-result");
-let formElement = document.querySelector(".js-form");
-let zlotychElement = document.querySelector(".js-zlotych");
+    const calculateResult = (amount, currency) => {
+        const EUR = 4.65;
+        const USD = 4.15;
+        const POUND = 5.50;
 
-
-
-let EUR = 4.65;
-let USD = 4.15;
-let POUND = 5.50;
-
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    let zlotych = +zlotychElement.value;
-    let currency = currencyElement.value;
+        switch (currency) {
+            case "EUR":
+                return amount / EUR;
 
 
-    switch (currencyElement.value) {
-        case "EUR":
-            result = zlotychElement.value / EUR;
-            break;
+            case "USD":
+                return amount / USD;
 
-        case "USD":
-            result = zlotychElement.value / USD;
-            break;
 
-        case "POUND":
-            result = zlotychElement.value / POUND;
-            break;
-    }
-    resultElement.innerHTML = `${zlotych.toFixed(2)} PLN = <strong>${result.toFixed(2)} ${currency}</strong> `;
+            case "POUND":
+                return amount / POUND;
 
-})
+        }
+    };
+
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+
+        const currencyElement = document.querySelector(".js-currency");
+        const resultElement = document.querySelector(".js-result");
+        const amountElement = document.querySelector(".js-amount");
+
+        const amount = +amountElement.value;
+        const currency = currencyElement.value;
+
+        const result = calculateResult(amount, currency);
+
+        resultElement.innerHTML = `${amount.toFixed(2)} PLN = <strong>${result.toFixed(2)} ${currency}</strong> `;
+    };
+
+
+    const init = () => {
+
+        const formElement = document.querySelector(".js-form");
+
+        formElement.addEventListener("submit", onFormSubmit);
+    };
+
+    init();
+}
