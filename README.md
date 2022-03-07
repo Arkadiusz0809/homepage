@@ -1,6 +1,6 @@
 # Arkadiusz Toruń - my begin files
 
-![Arkadiusz](images/IMG-1.jpg)
+![Arkadiusz](praca domowa moduł 5/IMG-1.jpg)
 
 ## Demo 
 https://github.com/Arkadiusz0809/homepage.git
