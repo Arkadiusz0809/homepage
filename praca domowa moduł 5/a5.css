@@ -9,13 +9,16 @@ html {
 .form {
     margin: 10px 10px auto;
     background-image: url("d.jpg");
-    background-size: auto;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 680px;
+    overflow-x: auto;
+    width:auto;
+    height:700px;
+
 }
 
 .form__fieldset {
-    max-width: 600px;
+    max-width: 500px;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
@@ -38,6 +41,7 @@ html {
     border-radius: 3px;
     color: white;
     margin-left: 41%;
+    
 }
 
 .form__paragraph {
@@ -53,7 +57,7 @@ html {
 }
 
 .form__zlotychValue {
-    margin-left: 26%;
+    margin:auto;
 }
 
 .form__valueSelect {
