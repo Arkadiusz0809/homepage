@@ -6,9 +6,9 @@ let zlotychElement = document.querySelector(".js-zlotych");
 
 
 
-let euro = 4.65;
-let dolar = 4.15;
-let pound = 5.50;
+let EUR = 4.65;
+let USD = 4.15;
+let POUND = 5.50;
 
 formElement.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -18,16 +18,16 @@ formElement.addEventListener("submit", (event) => {
 
 
     switch (currencyElement.value) {
-        case "euro":
-            result = zlotychElement.value / euro;
+        case "EUR":
+            result = zlotychElement.value / EUR;
             break;
 
-        case "dolar":
-            result = zlotychElement.value / dolar;
+        case "USD":
+            result = zlotychElement.value / USD;
             break;
 
-        case "pound":
-            result = zlotychElement.value / pound;
+        case "POUND":
+            result = zlotychElement.value / POUND;
             break;
     }
     resultElement.innerHTML = `${zlotych.toFixed(2)} PLN = <strong>${result.toFixed(2)} ${currency}</strong> `;
