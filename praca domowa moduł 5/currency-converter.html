@@ -26,18 +26,12 @@
             <legend class="form__legend">
                 Good day! Welcome in Currency-converter!
             </legend>
-            <p>
+            <p class="form__valueSelect">
                 <label>
                     <span class="form__labelText">
                         Select the currency
                     </span>
                 </label>
-            </p>
-            <p>
-                <span class="form__paragraph">!Press the button after the entered number!</span>
-            </p>
-            <p class="form__valueSelect">
-
                 <label>
 
                     <select class="form__currency js-currency">
@@ -46,14 +40,15 @@
                         <option value="POUND">GBP</option>
                     </select>
                 </label>
+
             </p>
 
             <p>
-                <label class="form__zlotychValue ">
+                <label class="form__amount ">
                     <span>
                         Enter value in PLN:
                     </span>
-                    <input type="number" name="zlotychValue" class="js-amount" required>
+                    <input type="number" name="amount" class="js-amount" required>
                 </label>
             </p>
             <p>
@@ -63,10 +58,11 @@
 
                 </label>
             </p>
+            <p>
+                <button class="form__button">Calculate</button>
+            </p>
         </fieldset>
-        <p>
-            <button class="form__button">Calculate</button>
-        </p>
+
     </form>
 
 

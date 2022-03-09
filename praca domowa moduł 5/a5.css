@@ -7,23 +7,22 @@ html {
 }
 
 .form {
-    margin: 10px 10px auto;
     background-image: url("d.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow-x: auto;
-    width:auto;
-    height:700px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: cover;
+background-position: center;
 }
 
 .form__fieldset {
-    max-width: 500px;
-    border: 1px solid #ccc;
+    flex-basis: 600px;
+    margin: 20px;
     padding: 20px;
-    border-radius: 5px;
-    margin: auto;
-    background-color: hsla(33, 100%, 88%, 0.548);
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 30px black;
 }
 
 .form__legend {
@@ -34,38 +33,29 @@ html {
     margin: auto;
     display: inline-block;
 }
+.form__currency{
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.form__valueSelect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .form__labelText {
     background-color: coral;
     padding: 5px;
     border-radius: 3px;
     color: white;
-    margin-left: 41%;
-    
-}
 
-.form__paragraph {
-    margin-left: 30.5%;
-    background-color: coral;
-    padding: 5px;
-    border-radius: 3px;
-    color: white;
-}
-
-.form__resultValue {
-    margin-left: 37%;
-}
-
-.form__zlotychValue {
-    margin:auto;
-}
-
-.form__valueSelect {
-    margin-left: 28%;
 }
 
 .form__button {
-    margin-left: 46%;
+    max-width: 600px;
+    width: 100%;
     border: none;
     background-color: teal;
     color: white;
@@ -79,9 +69,4 @@ html {
 
 .form__button:active {
     background-color: hsl(180, 100%, 35%);
-}
-
-
-.form__currency {
-    margin-left: 27%;
 }
